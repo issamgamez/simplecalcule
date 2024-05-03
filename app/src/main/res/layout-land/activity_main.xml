@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ImageView positioned on the right -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        app:srcCompat="@mipmap/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Title section, aligned to the left and avoiding the image -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/image"
+        android:gravity="center"/>
+
+    <!-- First EditText, positioned below the title -->
+    <EditText
+        android:id="@+id/numA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:inputType="number"
+        android:hint="@string/editor_text_1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/image"
+        android:layout_below="@id/title" />
+
+    <!-- Second EditText, positioned below the first one -->
+    <EditText
+        android:id="@+id/numB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:inputType="number"
+        android:hint="@string/editor_text_2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/image"
+        android:layout_below="@id/numA" />
+
+    <!-- Horizontal layout for buttons, aligned to the left -->
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/numB"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/image">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_add"
+            android:textColor="@color/indian_red"
+            android:textSize="24sp"
+            android:backgroundTint="#3F51B5"
+            android:text="@string/addition_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_minus"
+            android:textColor="@color/indian_red"
+            android:backgroundTint="#3F51B5"
+            android:textSize="24sp"
+            android:text="@string/minus_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_division"
+            android:textColor="@color/indian_red"
+            android:backgroundTint="#3F51B5"
+            android:textSize="24sp"
+            android:text="@string/divsion_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_multiplication"
+            android:textColor="@color/indian_red"
+            android:backgroundTint="#3F51B5"
+            android:textSize="24sp"
+            android:text="@string/multiplication_text" />
+
+    </LinearLayout>
+
+    <!-- Button to clear inputs, aligned to the left -->
+
+    <!-- Result text, centered at the bottom -->
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/clear_text" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_clear"
+        android:layout_marginStart="-106dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="-94dp"
+        android:layout_toStartOf="@id/image"
+        android:layout_toEndOf="@+id/btn_clear"
+        android:gravity="center"
+        android:text="@string/result_text"
+        android:textSize="24sp" />
+
+</RelativeLayout>

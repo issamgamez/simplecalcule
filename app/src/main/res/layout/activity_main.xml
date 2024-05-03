@@ -101,6 +101,8 @@
         android:gravity="center"
         android:text="@string/result_text"
         android:textSize="24sp"
-        android:layout_margin="40dp" />
+        android:layout_margin="40dp"
+        />
 
 </LinearLayout>
+
