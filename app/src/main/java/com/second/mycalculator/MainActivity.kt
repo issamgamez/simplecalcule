@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //display a short message in the depart
+        Toast.makeText(this,"made by El Gamez Issam",Toast.LENGTH_SHORT).show()
 
         btnAdd = findViewById(R.id.btn_add)
         btnMinus = findViewById(R.id.btn_minus)
@@ -45,7 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (valueB == 0.0) {
             // Display error message
-            Toast.makeText(this, "Cannot divide by zero!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Error in the second value ", Toast.LENGTH_SHORT).show()
             return
         }
 
