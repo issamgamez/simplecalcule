@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">calculator</string>
+    <string name="title">Simple Calculator</string>
+    <string name="editor_text_1">Enter the first number</string>
+    <string name="editor_text_2">Enter the second number</string>
+    <string name="addition_text">+</string>
+    <string name="minus_text">+</string>
+    <string name="divsion_text">+</string>
+    <string name="multiplication_text">+</string>
+    <string name="clear_text">Clear</string>
+    <string name="result_text">Operation result</string>
+
 </resources>

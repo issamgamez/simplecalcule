@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>  <!-- Pure Red -->
+    <color name="crimson">#DC143C</color>  <!-- Crimson Red -->
+    <color name="tomato">#FF6347</color>  <!-- Tomato Red -->
+    <color name="firebrick">#B22222</color>  <!-- Firebrick Red -->
+    <color name="indian_red">#CD5C5C</color>
 </resources>
